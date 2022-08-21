@@ -6,7 +6,7 @@
  * @param {String} [animationClass] animation class to apply upon either mouseenter event 
  * @returns {HTMLButtonElement} button 
  */
-const dropdownMenu = function dropdown(menuName, elementsToOpenContainer, buttonStylingArray = [], animationClass = undefined) {
+export const dropdownMenu = function dropdown(menuName, elementsToOpenContainer, buttonStylingArray = [], animationClass = undefined) {
   const button = document.createElement('button');
   button.textContent = menuName;
   button.classList.add(...buttonStylingArray);
